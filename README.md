@@ -10,9 +10,7 @@ This project is a starting point for a Flutter application.
 - Run some commands in CLI :
     ```sh
     flutter pub get
-    ```
 
-    ```sh
     flutter pub run build_runner build --delete-conflicting-outputs
     ```
     > Note: `build_runner` is required for package provides a concrete way of generating files using Dart code,.
@@ -36,4 +34,4 @@ Dekornata Test application using :
 
 - Flutter version : `Channel Stable, 2.5.2`
 - Dart version : `2.14.3`
-- Tested `Android` version : 8.0
+- Tested `Android` version : `8.0`
