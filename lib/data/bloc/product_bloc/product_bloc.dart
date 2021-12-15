@@ -233,6 +233,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
 
     yield state.copyWith(
       cart: _cart,
+      checkoutCart: _cart,
     );
 
     add(const ProductEvent.totalPrice());
