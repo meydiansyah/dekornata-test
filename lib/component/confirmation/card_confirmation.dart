@@ -1,5 +1,6 @@
 import 'package:dekornata/data/bloc/product_bloc/product_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/src/provider.dart';
 
 import '../separator.dart';
@@ -31,10 +32,12 @@ class CardConfirmation extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            Text(
-              "${context.read<ProductBloc>().state.invoice}",
-              style: TextStyle(
-                color: Colors.grey.withOpacity(.5),
+            BlocBuilder<ProductBloc, ProductState>(
+              builder: (context, state) => Text(
+                "${state.invoice}",
+                style: TextStyle(
+                  color: Colors.grey.withOpacity(.5),
+                ),
               ),
             ),
             SizedBox(height: 20),
