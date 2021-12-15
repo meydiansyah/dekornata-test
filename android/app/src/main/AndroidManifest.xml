@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bin.bit.dekornata">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="dekornata"
         android:icon="@mipmap/launcher_icon">
